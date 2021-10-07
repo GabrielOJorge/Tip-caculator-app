@@ -1,4 +1,16 @@
 body {
-  background-color: var(--clr-strong-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  background-color: var(--clr-light-grayish-cyan);
   font-family: 'Space Mono', monospace;
+}
+
+button, input, textarea {
+  font-family: 'Space Mono', monospace;
+}
+
+.logo {
+  margin-bottom: 5rem;
 }
