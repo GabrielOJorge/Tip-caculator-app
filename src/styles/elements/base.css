@@ -10,3 +10,17 @@ body {
 button, input, textarea {
   font-family: 'Space Mono', monospace;
 }
+
+h2 {
+  font-size: clamp(1.4rem, 1.6rem, 2vw);
+  font-weight: 700;
+  color: var(--clr-dark-grayish-cyan);
+  margin-bottom: 1rem;
+}
+
+input[type="number"] {
+  background-color: var(--clr-light-cyan);
+  border-style: none;
+  border-radius: .2rem;
+  width: 100%;
+}
