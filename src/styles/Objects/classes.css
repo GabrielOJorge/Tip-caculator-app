@@ -1,7 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .logo {
   margin-bottom: 5rem;
 }
 
-.container {
-  
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 375px;
 }
