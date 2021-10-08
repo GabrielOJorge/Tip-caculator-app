@@ -1,11 +1,13 @@
 .main-btn {
   display: flex;
-  /* flex-wrap: wrap;
-  gap: 20px; */
+  /* width: 100%; */
+  justify-content: center;
   color: #fff;
+  font-size: clamp(2rem, 2.5rem, 2vw);
   font-weight: 700;
   border-style: none;
   background-color: var(--clr-very-dark-cyan);
-
-  padding: 1rem 3rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  cursor: pointer;
 }
