@@ -22,43 +22,44 @@
     <img class="logo" src="images/logo.svg" alt="logo">
 
     <div class="calculator">
-      <div class="bill">
-        <h2>Bill</h2>
-        
-        <input class="number-input" type="number">
-      </div>
-
-      <div class="tip-percentage">
-        <h2>Select Tip %</h2>
-
-        <div class="btn-wrapper">
-          <button class="main-btn">5%</button>
-          <button class="main-btn">10%</button>
-          <button class="main-btn">15%</button>
-          <button class="main-btn">25%</button>
-          <button class="main-btn">50%</button>
-          <input type="number" placeholder="CUSTOM">
+      <div class="content">
+        <div class="bill">
+          <label for="bill">Bill</label>
+          <input type="number" id="bill" placeholder="0">
         </div>
-      </div>
-
-      <div class="n-people">
-        <h2>Number of People</h2>
-
-        <input type="number">
-      </div>
-
-      <div class="result">
-        <div class="tip-amount">
-          <h3>Tip Amount<br>/ person</h3>
-          <p></p>
+  
+        <div class="tip-percentage">
+          <h2>Select Tip %</h2>
+  
+          <div class="btn-wrapper">
+            <button class="main-btn">5%</button>
+            <button class="main-btn">10%</button>
+            <button class="main-btn">15%</button>
+            <button class="main-btn">25%</button>
+            <button class="main-btn">50%</button>
+            <input type="number" id="tip" placeholder="CUSTOM">
+          </div>
         </div>
-
-        <div class="total">
-          <h3>Total<br>/ person</h3>
-          <p></p>
+  
+        <div class="n-people">
+          <label for="n-people">Number of People</label>
+  
+          <input type="number" id="n-people" placeholder="0">
         </div>
-
-        <button class="main-btn -reset">RESET</button>
+  
+        <div class="result">
+          <div class="tip-amount">
+            <h3>Tip Amount<br>/ person</h3>
+            <p></p>
+          </div>
+  
+          <div class="total">
+            <h3>Total<br>/ person</h3>
+            <p></p>
+          </div>
+  
+          <button class="main-btn -reset">RESET</button>
+        </div>
       </div>
     </div>
   </div>

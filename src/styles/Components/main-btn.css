@@ -1,6 +1,6 @@
 .main-btn {
   display: flex;
-  /* width: 100%; */
+  width: 100%;
   justify-content: center;
   color: #fff;
   font-size: clamp(2rem, 2.5rem, 2vw);
@@ -8,6 +8,6 @@
   border-style: none;
   background-color: var(--clr-very-dark-cyan);
   border-radius: .5rem;
-  padding: 1rem;
+  padding: 1rem 0;
   cursor: pointer;
 }

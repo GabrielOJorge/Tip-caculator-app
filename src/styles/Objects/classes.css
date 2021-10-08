@@ -15,14 +15,16 @@
   align-items: center;
   background-color: #fff;
   min-width: 280px;
-  width: 100%;
   padding-top: 3rem;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
 }
 
-.bill, .tip-percentage, .n-people {
+.content {
   width: 85%;
+}
+
+.bill, .tip-percentage, .n-people {
   margin-bottom: 3rem;
 }
 
@@ -31,5 +33,9 @@
   flex-wrap: wrap;
   gap: 15px;
   /* flex-direction: column; */
-  width: 90%;
+  /* width: 90%; */
+}
+
+#bill {
+  background: var(--clr-light-cyan) url(/images/icon-dollar.svg) left no-repeat;
 }
