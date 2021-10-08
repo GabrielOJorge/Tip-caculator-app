@@ -11,3 +11,8 @@
   padding: 1rem 0;
   cursor: pointer;
 }
+
+.main-btn.-reset {
+  background-color: var(--clr-strong-cyan);
+  color: var(--clr-very-dark-cyan);
+}
