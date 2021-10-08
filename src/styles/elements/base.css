@@ -11,7 +11,7 @@ button, input, textarea {
   font-family: 'Space Mono', monospace;
 }
 
-h2 {
+h2, label {
   font-size: clamp(1.4rem, 1.6rem, 2vw);
   font-weight: 700;
   color: var(--clr-dark-grayish-cyan);
@@ -21,6 +21,15 @@ h2 {
 input[type="number"] {
   background-color: var(--clr-light-cyan);
   border-style: none;
-  border-radius: .2rem;
+  border-radius: .5rem;
   width: 100%;
+  padding: 1rem 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
