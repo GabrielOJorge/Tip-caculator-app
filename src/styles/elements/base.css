@@ -33,3 +33,15 @@ input[type=number] {
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+h3 {
+  font-size: clamp(1.2rem, 1.4rem, 2vw);
+  font-weight: 700;
+  color: var(--clr-dark-grayish-cyan);
+}
+
+p {
+  font-size: clamp(3rem, 4rem, 4vw);
+  font-weight: 700;
+  color: var(--clr-strong-cyan);
+}

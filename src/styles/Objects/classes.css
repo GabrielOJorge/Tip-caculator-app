@@ -24,7 +24,7 @@
   width: 85%;
 }
 
-.bill, .tip-percentage, .n-people {
+.bill, .tip-percentage, .n-people, .result {
   margin-bottom: 3rem;
 }
 
@@ -38,4 +38,25 @@
 
 #bill {
   background: var(--clr-light-cyan) url(/images/icon-dollar.svg) left no-repeat;
+}
+
+.result {
+  background-color: var(--clr-very-dark-cyan);
+  border-radius: 1.5rem;
+  padding: 4.5rem 2rem 2.5rem 2rem;
+}
+
+.result h2 {
+  color: #fff;
+}
+
+.values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.values .txt {
+  line-height: 1rem;
 }
