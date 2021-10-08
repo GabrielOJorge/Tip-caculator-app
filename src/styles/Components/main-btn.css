@@ -10,9 +10,15 @@
   border-radius: .5rem;
   padding: 1rem 0;
   cursor: pointer;
+  transition: background .2s ease-in-out;
 }
 
 .main-btn.-reset {
   background-color: var(--clr-strong-cyan);
+  color: var(--clr-very-dark-cyan);
+}
+
+.main-btn:hover {
+  background-color: var(--clr-hover-cyan);
   color: var(--clr-very-dark-cyan);
 }
