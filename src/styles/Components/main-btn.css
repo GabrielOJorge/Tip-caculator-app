@@ -1,3 +1,11 @@
 .main-btn {
   display: flex;
+  /* flex-wrap: wrap;
+  gap: 20px; */
+  color: #fff;
+  font-weight: 700;
+  border-style: none;
+  background-color: var(--clr-very-dark-cyan);
+
+  padding: 1rem 3rem;
 }
