@@ -21,7 +21,7 @@
 }
 
 .content {
-  width: 85%;
+  width: 92%;
   padding: 3rem 0;
 }
 
@@ -52,6 +52,9 @@
 }
 
 .result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--clr-very-dark-cyan);
   border-radius: 1.5rem;
   padding: 4.5rem 2rem 2.5rem 2rem;
@@ -81,11 +84,28 @@
 
   .content {
     display: flex;
-    align-items: center;
     padding: 5rem 0;
   }
 
   .result {
     margin-left: 4rem;
+    padding: 5rem 4rem 4rem;
+    width: 60%;
+  }
+
+  .values {
+    margin: 0;
+  }
+
+  .values.-amount {
+    margin-bottom: 6rem;
+  }
+
+  .tip-percentage {
+    width: 134%;
+  }
+
+  #tip {
+    width: 23%;
   }
 }
