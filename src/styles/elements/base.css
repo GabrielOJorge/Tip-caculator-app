@@ -15,23 +15,32 @@ h2, label {
   font-size: clamp(1.4rem, 1.6rem, 2vw);
   font-weight: 700;
   color: var(--clr-dark-grayish-cyan);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 input[type="number"] {
+  box-sizing: border-box;
   background-color: var(--clr-light-cyan);
   border-style: none;
   border-radius: .5rem;
   width: 100%;
   padding: 1rem 0;
-}
+  padding-right: 1.5rem;
+  margin-top: 1rem;
+  text-align: right;
 
-input[type=number] {
   -moz-appearance: textfield;
 }
 
-input[type=number]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+input[type="number"], 
+input[type="number"]::placeholder {
+  font-size: clamp(2rem, 3rem, 2vw);
+  font-weight: 700;
+  color: var(--clr-very-dark-cyan);
 }
 
 h3 {
@@ -44,4 +53,10 @@ p {
   font-size: clamp(3rem, 4rem, 4vw);
   font-weight: 700;
   color: var(--clr-strong-cyan);
+}
+
+@media (min-width: 750px) {
+  body {
+    align-items: center;
+  }
 }

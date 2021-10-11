@@ -15,16 +15,17 @@
   align-items: center;
   background-color: #fff;
   min-width: 280px;
-  padding-top: 3rem;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
+  width: 100%;
 }
 
 .content {
   width: 85%;
+  padding: 3rem 0;
 }
 
-.bill, .tip-percentage, .n-people, .result {
+.bill, .tip-percentage, .n-people {
   margin-bottom: 3rem;
 }
 
@@ -32,12 +33,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  /* flex-direction: column; */
-  /* width: 90%; */
 }
 
 #bill {
   background: var(--clr-light-cyan) url(/images/icon-dollar.svg) left no-repeat;
+  background-position-x: 1.5rem;
+}
+
+#tip {
+  width: 47%;
+  margin: 0;
+  text-align: center;
+}
+
+#n-people {
+  background: var(--clr-light-cyan) url(/images/icon-person.svg) left no-repeat;
+  background-position-x: 1.5rem;
 }
 
 .result {
@@ -47,6 +58,7 @@
 }
 
 .result h2 {
+  margin-bottom: initial;
   color: #fff;
 }
 
@@ -58,5 +70,22 @@
 }
 
 .values .txt {
-  line-height: 1rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 750px) {
+  .calculator {
+    width: initial;
+    border-radius: 3rem;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+  }
+
+  .result {
+    margin-left: 4rem;
+  }
 }
