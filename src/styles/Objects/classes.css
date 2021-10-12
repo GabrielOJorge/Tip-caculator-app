@@ -32,7 +32,7 @@
 .btn-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 1.5rem;
 }
 
 #bill {
@@ -87,10 +87,15 @@
     padding: 5rem 0;
   }
 
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+
   .result {
     margin-left: 4rem;
     padding: 5rem 4rem 4rem;
-    width: 60%;
+    width: 50%;
   }
 
   .values {
@@ -101,11 +106,13 @@
     margin-bottom: 6rem;
   }
 
-  .tip-percentage {
-    width: 134%;
-  }
-
   #tip {
-    width: 23%;
+    width: 30%;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  .calculator {
+    width: 95%;
   }
 }

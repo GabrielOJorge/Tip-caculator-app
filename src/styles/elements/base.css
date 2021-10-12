@@ -15,6 +15,9 @@ h2, label {
   font-size: clamp(1.4rem, 1.6rem, 2vw);
   font-weight: 700;
   color: var(--clr-dark-grayish-cyan);
+}
+
+.tip-percentage h2 {
   margin-bottom: 2rem;
 }
 
@@ -38,7 +41,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 input[type="number"], 
 input[type="number"]::placeholder {
-  font-size: clamp(2rem, 3rem, 2vw);
+  font-size: clamp(2rem, 2.5rem, 2vw);
   font-weight: 700;
   color: var(--clr-very-dark-cyan);
 }
@@ -50,7 +53,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(3rem, 4rem, 4vw);
+  font-size: clamp(3rem, 4.5rem, 4vw);
   font-weight: 700;
   color: var(--clr-strong-cyan);
 }
