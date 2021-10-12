@@ -1,12 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
 .logo {
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 }
 
 .calculator {
@@ -15,9 +16,10 @@
   align-items: center;
   background-color: #fff;
   min-width: 280px;
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
+  border-radius: 3rem;
   width: 100%;
+
+  margin-bottom: 10rem;
 }
 
 .content {
@@ -76,10 +78,15 @@
   line-height: 2rem;
 }
 
+.attribution {
+  font-size: clamp(1rem, 1.2rem, 2vw);
+  font-weight: 700;
+  color: var(--clr-dark-grayish-cyan);
+}
+
 @media (min-width: 750px) {
   .calculator {
     width: initial;
-    border-radius: 3rem;
   }
 
   .content {

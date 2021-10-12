@@ -1,7 +1,5 @@
 body {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
   height: 100vh;
   background-color: var(--clr-light-grayish-cyan);
   font-family: 'Space Mono', monospace;
@@ -15,6 +13,11 @@ h2, label {
   font-size: clamp(1.4rem, 1.6rem, 2vw);
   font-weight: 700;
   color: var(--clr-dark-grayish-cyan);
+}
+
+a {
+  color: var(--clr-very-dark-cyan);
+  text-decoration: none;
 }
 
 .tip-percentage h2 {
