@@ -42,7 +42,7 @@
   background-position-x: 1.5rem;
 }
 
-#tip {
+#custom-tip {
   width: 47%;
   margin: 0;
   text-align: center;
@@ -113,7 +113,7 @@
     margin-bottom: 6rem;
   }
 
-  #tip {
+  #custom-tip {
     width: 30%;
   }
 }
