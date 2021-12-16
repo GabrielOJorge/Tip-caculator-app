@@ -55,3 +55,15 @@ const calcTotalAmount = () => {
   let total = (billValue + billValue * tipPercent) / numberOfPeople;
   totalAmountPara.textContent = `$${Math.round(total * 10) / 10}`;
 };
+
+resetBtn.addEventListener("click", () => {
+  billInput.value = null;
+  customTip.value = null;
+  peopleInput.value = null;
+  tipAmountPara.textContent = "$0.00";
+  totalAmountPara.textContent = "$0.00";
+  
+  billValue = 0;
+  tipPercent = 0;
+  numberOfPeople = 0;
+});
