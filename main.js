@@ -5,6 +5,7 @@ const btn15 = document.querySelector("#btn-15");
 const btn25 = document.querySelector("#btn-25");
 const btn50 = document.querySelector("#btn-50");
 const customTip = document.querySelector("#custom-tip");
+const resetBtn = document.querySelector("#reset-btn")
 const peopleInput = document.querySelector("#n-people");
 const tipAmountPara = document.querySelector("#tip-amount");
 const totalAmountPara = document.querySelector("#total-amount");
@@ -15,7 +16,6 @@ let numberOfPeople = 0;
 
 billInput.oninput = (() => {
   billValue = Number(billInput.value);
-  console.log(billValue);
 });
 
 btn5.addEventListener("click", () => {
@@ -46,7 +46,12 @@ peopleInput.oninput = (() => {
   numberOfPeople = Number(peopleInput.value);
 });
 
+const calcTipAmount = () => {
+  let tip = (billValue * tipPercent) / numberOfPeople;
+  tipAmountPara.textContent = `$${Math.round(tip * 10) / 10}`;
+};
+
 const calcTotalAmount = () => {
   let total = (billValue + billValue * tipPercent) / numberOfPeople;
-  totalAmountPara.textContent = `$${Math.round( total * 10) / 10}`;
+  totalAmountPara.textContent = `$${Math.round(total * 10) / 10}`;
 };
