@@ -16,3 +16,7 @@ let tipPercent = 0;
 bill.oninput = (() => {
   billValue = bill.value;
 });
+
+btn10.addEventListener("click", () => {
+  tipPercent = btn10.value;
+});
