@@ -41,3 +41,7 @@ btn50.addEventListener("click", () => {
 customTip.oninput = (() => {
   tipPercent = Number(customTip.value / 100);
 });
+
+peopleInput.oninput = (() => {
+  numberOfPeople = Number(peopleInput.value);
+});
