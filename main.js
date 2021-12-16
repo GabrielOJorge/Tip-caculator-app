@@ -45,3 +45,8 @@ customTip.oninput = (() => {
 peopleInput.oninput = (() => {
   numberOfPeople = Number(peopleInput.value);
 });
+
+const calcTotalAmount = () => {
+  let total = (billValue + billValue * tipPercent) / numberOfPeople;
+  totalAmountPara.textContent = `$${Math.round( total * 10) / 10}`;
+};
