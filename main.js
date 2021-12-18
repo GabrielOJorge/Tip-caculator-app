@@ -15,74 +15,49 @@ let billValue = 0;
 let tipPercent = 0;
 let numberOfPeople = 0;
 
+setInterval(() => {
+  if (numberOfPeople > 0) {
+    calcTipAmount();
+    calcTotalAmount();
+  }
+}, 1);
+
 billInput.oninput = (() => {
   billValue = Number(billInput.value);
 });
 
-btn5.addEventListener("click", () => {
-  customTip.value = null;
-  tipPercent = Number(btn5.value);
+percentBtns.forEach(item => {
+  item.addEventListener("click", () => {
+    customTip.value = null;
 
-  percentBtns.forEach(item => {
-    item.style.backgroundColor = "var(--clr-very-dark-cyan)";
-    item.style.color = "#fff";
+    percentBtns.forEach(item => {
+      item.style.backgroundColor = "var(--clr-very-dark-cyan)";
+      item.style.color = "#fff";
+    });
+    
+    item.style.backgroundColor = "var(--clr-strong-cyan)";
+    item.style.color = "var(--clr-very-dark-cyan)";
   });
+});
 
-  btn5.style.backgroundColor = "var(--clr-hover-cyan)";
-  btn5.style.color = "var(--clr-very-dark-cyan)";
-
+btn5.addEventListener("click", () => {
+  tipPercent = Number(btn5.value);
 });
 
 btn10.addEventListener("click", () => {
-  customTip.value = null;
   tipPercent = Number(btn10.value);
-
-  percentBtns.forEach(item => {
-    item.style.backgroundColor = "var(--clr-very-dark-cyan)";
-    item.style.color = "#fff";
-  });
-
-  btn10.style.backgroundColor = "var(--clr-hover-cyan)";
-  btn10.style.color = "var(--clr-very-dark-cyan)";
 });
 
 btn15.addEventListener("click", () => {
-  customTip.value = null;
   tipPercent = Number(btn15.value);
-
-  percentBtns.forEach(item => {
-    item.style.backgroundColor = "var(--clr-very-dark-cyan)";
-    item.style.color = "#fff";
-  });
-
-  btn15.style.backgroundColor = "var(--clr-hover-cyan)";
-  btn15.style.color = "var(--clr-very-dark-cyan)";
 });
 
 btn25.addEventListener("click", () => {
-  customTip.value = null;
   tipPercent = Number(btn25.value);
-
-  percentBtns.forEach(item => {
-    item.style.backgroundColor = "var(--clr-very-dark-cyan)";
-    item.style.color = "#fff";
-  });
-
-  btn25.style.backgroundColor = "var(--clr-hover-cyan)";
-  btn25.style.color = "var(--clr-very-dark-cyan)";
 });
 
 btn50.addEventListener("click", () => {
-  customTip.value = null;
   tipPercent = Number(btn50.value);
-
-  percentBtns.forEach(item => {
-    item.style.backgroundColor = "var(--clr-very-dark-cyan)";
-    item.style.color = "#fff";
-  });
-
-  btn50.style.backgroundColor = "var(--clr-hover-cyan)";
-  btn50.style.color = "var(--clr-very-dark-cyan)";
 });
 
 customTip.oninput = (() => {
@@ -109,9 +84,14 @@ const calcTotalAmount = () => {
 };
 
 resetBtn.addEventListener("click", () => {
+  billValue = 0;
+  tipPercent = 0;
+  numberOfPeople = 0;
+
   billInput.value = null;
   customTip.value = null;
   peopleInput.value = null;
+
   tipAmountPara.textContent = "$0.00";
   totalAmountPara.textContent = "$0.00";
   
@@ -119,8 +99,4 @@ resetBtn.addEventListener("click", () => {
     item.style.backgroundColor = "var(--clr-very-dark-cyan)";
     item.style.color = "#fff";
   });
-
-  billValue = 0;
-  tipPercent = 0;
-  numberOfPeople = 0;
 });
