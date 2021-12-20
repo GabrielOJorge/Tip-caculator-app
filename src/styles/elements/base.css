@@ -30,7 +30,7 @@ input[type="number"] {
   border-style: none;
   border-radius: .5rem;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 3rem;
   padding-right: 1.5rem;
   margin-top: 1rem;
   text-align: right;
@@ -55,10 +55,11 @@ h3 {
   color: var(--clr-dark-grayish-cyan);
 }
 
-p {
+output {
   font-size: clamp(3rem, 4.5rem, 4vw);
   font-weight: 700;
   color: var(--clr-strong-cyan);
+  overflow: hidden;
 }
 
 @media (min-width: 750px) {
