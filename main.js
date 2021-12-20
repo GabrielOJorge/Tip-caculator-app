@@ -8,8 +8,9 @@ const btn50 = document.querySelector("#btn-50");
 const customTip = document.querySelector("#custom-tip");
 const resetBtn = document.querySelector("#reset-btn")
 const peopleInput = document.querySelector("#n-people");
-const tipAmountPara = document.querySelector("#tip-amount");
-const totalAmountPara = document.querySelector("#total-amount");
+const numberOfPeopleDiv =document.querySelector(".n-people")
+const tipAmountOutput = document.querySelector("#tip-amount");
+const totalAmountOutput = document.querySelector("#total-amount");
 
 let billValue = 0;
 let tipPercent = 0;
@@ -67,6 +68,10 @@ customTip.oninput = (() => {
     item.style.backgroundColor = "var(--clr-very-dark-cyan)";
     item.style.color = "#fff";
   });
+
+  if (numberOfPeople === 0) {
+    
+  }
 });
 
 peopleInput.oninput = (() => {
@@ -75,12 +80,12 @@ peopleInput.oninput = (() => {
 
 const calcTipAmount = () => {
   let tip = (billValue * tipPercent) / numberOfPeople;
-  tipAmountPara.textContent = `$${Math.round(tip * 10) / 10}`;
+  tipAmountOutput.textContent = `$${Math.round(tip * 10) / 10}`;
 };
 
 const calcTotalAmount = () => {
   let total = (billValue + billValue * tipPercent) / numberOfPeople;
-  totalAmountPara.textContent = `$${Math.round(total * 10) / 10}`;
+  totalAmountOutput.textContent = `$${Math.round(total * 10) / 10}`;
 };
 
 resetBtn.addEventListener("click", () => {
@@ -92,8 +97,8 @@ resetBtn.addEventListener("click", () => {
   customTip.value = null;
   peopleInput.value = null;
 
-  tipAmountPara.textContent = "$0.00";
-  totalAmountPara.textContent = "$0.00";
+  tipAmountOutput.textContent = "$0.00";
+  totalAmountOutput.textContent = "$0.00";
   
   percentBtns.forEach(item => {
     item.style.backgroundColor = "var(--clr-very-dark-cyan)";
