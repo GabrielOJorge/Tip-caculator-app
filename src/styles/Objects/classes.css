@@ -10,7 +10,7 @@
 }
 
 .calculator {
-  width: 100rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,11 +83,12 @@
   color: var(--clr-dark-grayish-cyan);
   text-align: center;
   width: 90%;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 750px) {
   .calculator {
-    width: initial;
+    width: min(100rem, 80%);
   }
 
   .content {
