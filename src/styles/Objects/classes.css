@@ -61,6 +61,14 @@
   color: #ff6d6d;
 }
 
+.alert-outline {
+  outline: 2px solid #ff6d6d;
+}
+
+.alert-outline:focus {
+  outline: 2px solid #ff6d6d;
+}
+
 #n-people {
   background: var(--clr-light-cyan) url(/images/icon-person.svg) left no-repeat;
   background-position-x: 1.5rem;
