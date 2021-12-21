@@ -47,6 +47,20 @@
   padding: 1rem 1rem;
 }
 
+.n-people .txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert-msg {
+  display: none;
+}
+
+.alert {
+  display: inline;
+  color: #ff6d6d;
+}
+
 #n-people {
   background: var(--clr-light-cyan) url(/images/icon-person.svg) left no-repeat;
   background-position-x: 1.5rem;
@@ -86,9 +100,17 @@
   margin-bottom: 2rem;
 }
 
+.attribution a {
+  transition: color .3s ease-in-out;
+}
+
+.attribution a:hover {
+  color: var(--clr-strong-cyan);
+}
+
 @media (min-width: 750px) {
   .calculator {
-    width: min(100rem, 80%);
+    width: min(100rem, 95%);
   }
 
   .content {
