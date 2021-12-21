@@ -24,6 +24,10 @@ a {
   margin-bottom: 2rem;
 }
 
+input:focus {
+  outline: 2px solid var(--clr-strong-cyan);
+}
+
 input[type="number"] {
   box-sizing: border-box;
   background-color: var(--clr-light-cyan);
