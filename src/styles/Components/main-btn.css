@@ -8,7 +8,7 @@
   border-radius: .5rem;
   padding: 1rem 0;
   cursor: pointer;
-  transition: scale .2s ease-in-out;
+  transition: transform .2s ease-in-out;
 }
 
 .main-btn.-reset {
@@ -18,7 +18,7 @@
 }
 
 .main-btn:hover {
-  scale: 1.08;
+  transform: scale(1.08);
 }
 
 @media (min-width: 750px) {
