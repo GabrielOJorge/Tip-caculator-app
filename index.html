@@ -42,8 +42,11 @@
           </div>
     
           <div class="n-people">
-            <label for="n-people">Number of People</label>
-            <input type="number" id="n-people" placeholder="0">
+            <div class="txt">
+              <label for="n-people">Number of People</label>
+              <h2 id="alert" class="alert-msg">Can't be zero</h2>
+            </div>
+            <input min="1" type="number" id="n-people" placeholder="0">
           </div>
         </div>
 

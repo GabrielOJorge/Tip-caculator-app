@@ -8,9 +8,9 @@ const btn50 = document.querySelector("#btn-50");
 const customTip = document.querySelector("#custom-tip");
 const resetBtn = document.querySelector("#reset-btn")
 const peopleInput = document.querySelector("#n-people");
-const numberOfPeopleDiv =document.querySelector(".n-people")
 const tipAmountOutput = document.querySelector("#tip-amount");
 const totalAmountOutput = document.querySelector("#total-amount");
+const alertMsg = document.querySelector("#alert");
 
 let billValue = 0;
 let tipPercent = 0;
@@ -68,14 +68,19 @@ customTip.oninput = (() => {
     item.style.backgroundColor = "var(--clr-very-dark-cyan)";
     item.style.color = "#fff";
   });
-
-  if (numberOfPeople === 0) {
-    
-  }
 });
 
 peopleInput.oninput = (() => {
   numberOfPeople = Number(peopleInput.value);
+  console.log(numberOfPeople);
+
+  if (numberOfPeople === 0) {
+    alertMsg.classList.add("alert");
+    peopleInput.classList.add("alert-outline");
+  } else {
+    alertMsg.classList.remove("alert");
+    peopleInput.classList.remove("alert-outline");
+  }
 });
 
 const calcTipAmount = () => {
@@ -104,4 +109,7 @@ resetBtn.addEventListener("click", () => {
     item.style.backgroundColor = "var(--clr-very-dark-cyan)";
     item.style.color = "#fff";
   });
+
+  alertMsg.classList.remove("alert");
+  peopleInput.classList.remove("alert-outline");
 });
