@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://gabrielojorge.github.io/Tip-caculator-app/]
+- Live Site URL: [Tip Calculator App](https://gabrielojorge.github.io/Tip-caculator-app/)
 
 ## My Process
 
