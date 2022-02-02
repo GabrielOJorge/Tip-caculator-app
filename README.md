@@ -23,9 +23,9 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Calculate the correct tip and total cost of the bill per person
+- View the optimal layout for the app depending on their device's screen size;
+- See hover states for all interactive elements on the page;
+- Calculate the correct tip and total cost of the bill per person.
 
 ### Screenshot
 
@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Tip Calculator App](https://gabrielojorge.github.io/Tip-caculator-app/)
+- Live Site URL: [Tip Calculator App](https://gabrielojorge.github.io/Tip-caculator-app/).
 
 ## Style Guide
 
@@ -41,41 +41,41 @@ Users should be able to:
 
 The designs were created to the following widths:
 
-- Mobile: 375px
-- Desktop: 1440px
+- Mobile: 375px;
+- Desktop: 1440px.
 
 ### Colors
 
 #### Primary
 
-- Strong cyan: hsl(172, 67%, 45%)
+- Strong cyan: hsl(172, 67%, 45%).
 
 #### Neutral
 
-- Very dark cyan: hsl(183, 100%, 15%)
-- Dark grayish cyan: hsl(186, 14%, 43%)
-- Dark grayish cyan: hsl(184, 14%, 56%)
-- Light grayish cyan: hsl(185, 41%, 84%)
-- Light grayish cyan: hsl(189, 41%, 97%)
-- White: hsl(0, 0%, 100%)
+- Very dark cyan: hsl(183, 100%, 15%);
+- Dark grayish cyan: hsl(186, 14%, 43%);
+- Dark grayish cyan: hsl(184, 14%, 56%);
+- Light grayish cyan: hsl(185, 41%, 84%);
+- Light grayish cyan: hsl(189, 41%, 97%);
+- White: hsl(0, 0%, 100%).
 
 ### Typography
 
 ### Body
 
-- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
-- Weights: 400, 500, 700
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono);
+- Weights: 400, 500, 700.
 
 ## My Process
 
 ### Built with
 
-- HTML5
-- CSS
-- JavaScript
-- Flexbox
-- Mobile-first workflow
+- HTML5;
+- CSS;
+- JavaScript;
+- Flexbox;
+- Mobile-first workflow.
 
 ## Author
 
-- Website - [Gabriel O. Jorge](https://gabrielojorge.github.io/Portifolio/)
+- Website - [Gabriel O. Jorge](https://gabrielojorge.github.io/Portifolio/).
